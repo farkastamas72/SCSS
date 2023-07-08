@@ -1,0 +1,106 @@
+$base-font-size: 15px;
+$base-padding: 15px;
+$base-font-weight: 400;
+$base-margin: 20px 0;
+
+$bottom-shadow: 0 3px 6px -4px black;
+$top-shadow: 0px -4px 6px rgba(0, 0, 0, 0.523);
+
+$base-font-color: #fff;
+$menu-hover-color: #f3f3f3;
+$secondary-bgc:#dcb499;
+$bgc-text: #c0997f;
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+p {
+    padding: 5px;
+    margin: 0px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: $secondary-bgc;
+    backdrop-filter: blur(12px);
+    position: sticky;
+    padding: $base-padding;
+
+    box-shadow: $bottom-shadow;
+}
+
+
+li {
+  text-decoration: none;
+  list-style: none;  
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  font-size: $base-font-size;
+  color:$base-font-color;
+  text-shadow: $bottom-shadow;
+
+  transition: all 0.5s;
+}
+
+li:hover {
+    color:$menu-hover-color;
+    cursor: pointer;
+}
+
+
+.main-title {
+    color: $base-font-color;
+    padding: $base-padding;
+}
+
+
+.text-box {
+    padding: $base-padding;
+    box-shadow: $bottom-shadow;
+    color:$base-font-color;
+    font-size: $base-font-size;
+    background-color:$bgc-text;
+}
+
+
+.main-container {
+    background-color: $secondary-bgc;
+    width: 1320px;
+    margin: $base-margin;
+    padding:$base-padding;
+}
+
+
+form {
+    padding:$base-padding;
+    box-shadow: $bottom-shadow;
+    color:$base-font-color;
+    font-size: $base-font-size;
+    background-color: $bgc-text;
+    margin:$base-margin;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: $secondary-bgc;
+    margin: $base-margin;
+    color: $base-font-color;
+    font-size: $base-font-size;
+    box-shadow: $top-shadow;
+    padding: $base-padding;
+
+}
+
+
+.items-left {
+    text-align: center;
+}
